@@ -1,0 +1,74 @@
+/* Header */
+
+.header {
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px lightgray;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 25px 0;
+    }
+}
+
+.header--menu a {
+    color: #000;
+}
+
+/* Footer */
+
+footer {
+    background-color: #353535;
+    color: #FFF;
+    font-weight: 100;
+    width: 100%;
+    .footer__logo {
+        font-family: Shrikhand, cursive;
+        font-size: 20px;
+        height: 17px;
+        width: 98px;
+        @media (max-width: 992px){
+            padding: 0 0 15px 0;
+        }
+    }
+}
+
+footer a {
+    color: #FFF;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+footer li {
+    @media (max-width: 992px){
+        padding-top: 10px;
+    }
+}
+
+footer li:nth-child(2),
+footer li:nth-child(3){
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    @media (max-width: 768px){
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto 0 auto 15px;
+    }
+    @media (min-width: 768px) and (max-width: 992px){
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto 0 auto 15px;
+    }
+}

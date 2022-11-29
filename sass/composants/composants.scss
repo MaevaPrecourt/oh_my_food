@@ -1,0 +1,96 @@
+.btn {
+    grid-row: 4;
+    padding: 50px;
+    &__menu {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        @media (min-width: 768px){
+            grid-column: 2;
+        }
+    }
+}
+
+.btn-explorer {
+    align-items: center;
+    background-image: linear-gradient(to top, $primary-color, $secondary-color);
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    cursor: pointer;
+    height: 40px;
+    margin: 20px 0 25px 0;
+    position: relative;
+    transform: scale(1);
+    transition: transform 400ms;
+    width: 200px;
+    &:hover {
+        box-shadow: 10px 10px 20px #343638;
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+}
+
+.fa-arrow-left {
+    position: relative;
+    top: 30px;
+    right: 585px;
+    @media (max-width: 768px){
+    position: relative;
+    bottom: -27.5px;
+    right: 225px;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        position: relative;
+        bottom: -27.5px;
+        right: 270px;
+    }
+}
+
+.fa-heart {
+    color: lightgray;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: -38px;
+    &:hover::before {
+        background: linear-gradient(to top, $primary-color, $secondary-color);
+        background-clip: text;
+        font-weight: 900;
+        transition: 400ms ease-out;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.fa-heart-menu {
+    position: relative;
+    bottom: 12.5px;
+    left: -20px;
+    @media (max-width: 768px){
+        position: relative;
+        top: -5px;
+    }
+    @media (min-width: 768px) and (max-width: 992px){
+        position: relative;
+        top: -5px;
+        left: -20px;
+    }
+}
+
+.fa-utensils {
+    padding: 0;
+}
+
+.new {
+    background-color: $tertiary-color;
+    color: #048968;
+    font-size: 17.5px;
+    font-weight: bold;
+    height: 22.5px;
+    position: relative;
+    right: 20px;
+    top: 20px;
+    width: 72.5px;
+    z-index: 4;
+}
