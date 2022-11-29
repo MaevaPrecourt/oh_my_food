@@ -57,7 +57,10 @@ input {
     color: #353535;
 }
 
-/*
+
+
+
+
 //Balises diverses
 
 * {
@@ -123,11 +126,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 25px 0;
-    @media (max-width: 768px){
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto 0 auto 15px;
-    }
 }
 
 //Functioning
@@ -158,12 +156,6 @@ ul {
     }
 }
 
-.functioning h2 {
-    @media (max-width: 768px){
-        padding-top: 5px;
-    }
-}
-
 .functioning a {
     color: #000;
     font-weight: 600;
@@ -178,23 +170,11 @@ ul {
         position: relative;
         right: 9px;
         top: 6px;
-        @media (max-width: 768px){
-            position: relative;
-            right: 240px;
-        }
     }
 }
 
 #step__two {
     margin-left: -10px;
-    @media (max-width: 768px){
-        margin-left: -15px;
-    }
-}
-#step__three {
-    @media (max-width: 768px){
-        margin-left: -10px;
-    }
 }
 
 .fa-mobile-button, .fa-list-ul, .fa-store {
@@ -208,11 +188,6 @@ ul {
 
 #restaurants {
     background-color: #F6F6F6;
-    @media (max-width: 768px){
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 #restaurants h2 {
@@ -227,11 +202,6 @@ ul {
     height: 297.5px;
     margin: 15px;
     width: 480px;
-    @media (max-width: 768px){
-        height: 450px;
-        margin: -27.5px 0 25px 0;
-        width: 650px;
-    }
     &__palette {
         position: relative;
         z-index: 2;
@@ -247,10 +217,8 @@ ul {
     }
     &__delice {
         position: relative;
-        @media (max-width: 768px){
-            margin-bottom: 50px;
-        }
     }
+}
 
 .article__image {
     border-radius: 15px 15px 0 0;
@@ -271,4 +239,4 @@ ul {
         margin-left: 0;
         padding: 0 0 25px 12.5px;
     }
-}}*/
+}
