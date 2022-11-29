@@ -186,12 +186,16 @@ ul {
 
 //Restaurants
 
-#restaurants {
+#restaurants__titre {
     background-color: #F6F6F6;
+    margin-bottom: 0;
+    padding: 30px 0 15px 10px;
 }
 
-#restaurants h2 {
-    padding: 15px 0 0 10px;
+#restaurants {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
 }
 
 .article {
@@ -199,7 +203,7 @@ ul {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 297.5px;
+    height: 298px;
     margin: 15px;
     width: 480px;
     &__palette {
@@ -216,6 +220,7 @@ ul {
     }
     &__delice {
         position: relative;
+        z-index: 2;
     }
 }
 
@@ -236,6 +241,6 @@ ul {
     justify-content: space-between;
     &--text {
         margin-left: 0;
-        padding: 0 0 25px 12.5px;
+        padding: 0 0 25px 13px;
     }
 }
