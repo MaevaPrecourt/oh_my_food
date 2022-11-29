@@ -537,23 +537,12 @@ footer .footer__logo {
   height: 17px;
   width: 98px;
 }
-@media (max-width: 992px) {
-  footer .footer__logo {
-    padding: 0 0 15px 0;
-  }
-}
 
 footer a {
   color: #FFF;
 }
 footer a:hover {
   color: #9356DC;
-}
-
-@media (max-width: 992px) {
-  footer li {
-    padding-top: 10px;
-  }
 }
 
 footer li:nth-child(2),
@@ -567,35 +556,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 25px 0;
-}
-@media (max-width: 768px) {
-  ul {
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: auto 0 auto 15px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  ul {
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: auto 0 auto 15px;
-  }
-}
-
-.btn {
-  grid-row: 4;
-  padding: 50px;
-}
-.btn__menu {
-  align-items: center;
-  display: flex;
-  padding: 20px;
-}
-@media (min-width: 768px) {
-  .btn__menu {
-    grid-column: 2;
-  }
 }
 
 .btn-explorer {
@@ -623,20 +583,6 @@ ul {
   top: 30px;
   right: 585px;
 }
-@media (max-width: 768px) {
-  .fa-arrow-left {
-    position: relative;
-    bottom: -27.5px;
-    right: 225px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fa-arrow-left {
-    position: relative;
-    bottom: -27.5px;
-    right: 270px;
-  }
-}
 
 .fa-heart {
   color: lightgray;
@@ -659,19 +605,6 @@ ul {
   bottom: 12.5px;
   left: -20px;
 }
-@media (max-width: 768px) {
-  .fa-heart-menu {
-    position: relative;
-    top: -5px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .fa-heart-menu {
-    position: relative;
-    top: -5px;
-    left: -20px;
-  }
-}
 
 .fa-utensils {
   padding: 0;
@@ -683,7 +616,7 @@ ul {
   font-size: 17.5px;
   font-weight: bold;
   height: 22.5px;
-  position: relative;
+  position: absolute;
   right: 20px;
   top: 20px;
   width: 72.5px;
