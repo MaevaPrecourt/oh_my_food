@@ -147,7 +147,6 @@ ul {
         margin: 3%;
         transform: scale(1);
         transition: transform 400ms;
-        width: 70%;
             &:hover {
                 background: lighten($primary-color, 25%);
                 transform: scale(1.05);

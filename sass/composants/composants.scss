@@ -1,3 +1,9 @@
+.btn-enchantee {
+    position: relative;
+    top: 350px;
+    right: 860px;
+}
+
 .btn-explorer {
     align-items: center;
     background-image: linear-gradient(to top, $primary-color, $secondary-color);
@@ -16,6 +22,12 @@
         cursor: pointer;
         transform: scale(1.15);
     }
+}
+
+.btn-order {
+    position: relative;
+    top: 290px;
+    right: 858px;
 }
 
 .fa-arrow-left {

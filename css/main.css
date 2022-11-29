@@ -235,7 +235,6 @@ ul {
   margin: 3%;
   transform: scale(1);
   transition: transform 400ms;
-  width: 70%;
 }
 .functioning__container__card:hover {
   background: #d7c0f2;
@@ -380,8 +379,10 @@ html {
 
 section {
   background-color: #F6F6F6;
+  display: flex;
   height: auto;
   justify-items: center;
+  padding-bottom: 100px;
   max-width: 100%;
 }
 
@@ -438,7 +439,7 @@ section {
 
 .menu__choice__enchantee {
   position: relative;
-  bottom: 20px;
+  bottom: -40px;
 }
 
 .check {
@@ -483,18 +484,30 @@ section {
   height: 35px;
   margin-right: 250px;
   position: relative;
-  right: 90px;
+  right: -17px;
+  width: 40px;
+}
+
+.card__ghost__enchantee {
+  align-items: baseline;
+  border-bottom: 3px solid #99E2D0;
+  display: flex;
+  height: 35px;
+  margin-right: 250px;
+  position: relative;
+  bottom: 35px;
+  right: -17px;
   width: 40px;
 }
 
 .card__menu {
   align-items: center;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   display: flex;
   height: 66px;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 13px;
+  padding: 0 15px;
   position: relative;
   width: 450px;
 }
@@ -563,6 +576,12 @@ ul {
   padding: 25px 0;
 }
 
+.btn-enchantee {
+  position: relative;
+  top: 350px;
+  right: 860px;
+}
+
 .btn-explorer {
   align-items: center;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -581,6 +600,12 @@ ul {
   box-shadow: 10px 10px 20px #343638;
   cursor: pointer;
   transform: scale(1.15);
+}
+
+.btn-order {
+  position: relative;
+  top: 290px;
+  right: 858px;
 }
 
 .fa-arrow-left {
