@@ -1,4 +1,4 @@
-/* Header */
+// Header
 
 .header {
     background-color: #FFF;
@@ -19,7 +19,14 @@
     color: #000;
 }
 
-/* Footer */
+// Font Awesome
+
+.fa-utensils,
+.fa-handshake {
+    width: 28px;
+}
+
+// Footer
 
 footer {
     background-color: #353535;
@@ -30,6 +37,7 @@ footer {
         font-family: Shrikhand, cursive;
         font-size: 20px;
         height: 17px;
+        margin: 30px 0 15px 0;
         width: 98px;
     }
 }
@@ -41,15 +49,24 @@ footer a {
     }
 }
 
+footer li {
+    margin-top: 15px;
+}
+
 footer li:nth-child(2),
 footer li:nth-child(3){
     font-weight: bold;
 }
 
+footer li:nth-child(5){
+    margin-bottom: 30px;
+}
+
 ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
-    padding: 25px 0;
+    padding: 0 20px;
 }

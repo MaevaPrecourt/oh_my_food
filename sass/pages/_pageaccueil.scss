@@ -1,4 +1,4 @@
-//Balises diverses
+// Balises diverses
 
 * {
     font-family: "Roboto", sans-serif;
@@ -17,7 +17,7 @@ a {
     color: #000;
 }
 
-//Location
+// Location
 
 #location {
     background-color: #EAEAEA;
@@ -39,7 +39,7 @@ input {
     }
 }
 
-//Exploration
+// Exploration
 
 .exploration {
     align-items: center;
@@ -57,78 +57,7 @@ input {
     color: #353535;
 }
 
-
-
-
-
-//Balises diverses
-
-* {
-    font-family: "Roboto", sans-serif;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.btn-explorer a {
-    color: #FFF;
-}
-
-#restaurants a {
-    color: #000;
-}
-
-//Location
-
-#location {
-    background-color: #EAEAEA;
-    display: flex;
-    justify-content: center;
-    .fa-location-dot {
-        color: #353535;
-        padding: 5px 5px 7px 15px;
-    }
-}
-
-input {
-    background-color: #EAEAEA;
-    border: none;
-    font-weight: 600;
-    width: 125px;
-    ::placeholder {
-        color: #353535;
-    }
-}
-
-//Exploration
-
-.exploration {
-    align-items: center;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0;
-    text-align: center;
-    .exploration h1 {
-        font-size: 15px;
-    }
-}
-
-.exploration p {
-    color: #353535;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 25px 0;
-}
-
-//Functioning
+// Functioning
 
 .functioning {
     margin-bottom: 5px;
@@ -178,12 +107,12 @@ ul {
     }
 }
 
-//Restaurants
+// Restaurants
 
 #restaurants__titre {
     background-color: #F6F6F6;
     margin-bottom: 0;
-    padding: 30px 0 15px 10px;
+    padding: 50px 0 15px 10px;
 }
 
 #restaurants {

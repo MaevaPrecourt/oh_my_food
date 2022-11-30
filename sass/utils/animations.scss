@@ -1,4 +1,4 @@
-/* Loading */
+// Loading
 
 @keyframes loading {
     100% {
@@ -62,7 +62,7 @@
     width: 30px;
 }
   
-/* Menu - Cards */
+// Menu - Cards
 
 .card__menu {
     &:hover >.menu__choice--text {
@@ -91,7 +91,7 @@
     }
 }
 
-/* Menu - Ordinaux */
+// Menu - Ordinaux
 
 .first {
     animation: menu $menu-duree $first-delay backwards;

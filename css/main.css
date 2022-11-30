@@ -3,7 +3,6 @@
   display: flex;
 }
 
-/* Loading */
 @keyframes loading {
   100% {
     opacity: 0;
@@ -64,7 +63,6 @@
   width: 30px;
 }
 
-/* Menu - Cards */
 .card__menu:hover > .menu__choice--text {
   width: 180px;
 }
@@ -89,7 +87,6 @@
     opacity: 1;
   }
 }
-/* Menu - Ordinaux */
 .first {
   animation: menu 1000ms 50ms backwards;
 }
@@ -155,67 +152,6 @@ input ::placeholder {
   color: #353535;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn-explorer a {
-  color: #FFF;
-}
-
-#restaurants a {
-  color: #000;
-}
-
-#location {
-  background-color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-}
-#location .fa-location-dot {
-  color: #353535;
-  padding: 5px 5px 7px 15px;
-}
-
-input {
-  background-color: #EAEAEA;
-  border: none;
-  font-weight: 600;
-  width: 125px;
-}
-input ::placeholder {
-  color: #353535;
-}
-
-.exploration {
-  align-items: center;
-  background-color: #F6F6F6;
-  display: flex;
-  flex-direction: column;
-  padding: 15px 0;
-  text-align: center;
-}
-.exploration .exploration h1 {
-  font-size: 15px;
-}
-
-.exploration p {
-  color: #353535;
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  margin: 0;
-  padding: 25px 0;
-}
-
 .functioning {
   margin-bottom: 5px;
   padding: 20px 10px 30px 10px;
@@ -265,7 +201,7 @@ ul {
 #restaurants__titre {
   background-color: #F6F6F6;
   margin-bottom: 0;
-  padding: 30px 0 15px 10px;
+  padding: 50px 0 15px 10px;
 }
 
 #restaurants {
@@ -377,7 +313,7 @@ section {
   display: flex;
   height: auto;
   justify-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   max-width: 100%;
 }
 
@@ -517,7 +453,6 @@ section {
   cursor: pointer;
 }
 
-/* Header */
 .header {
   background-color: #FFF;
   box-shadow: 0px 2px 5px lightgray;
@@ -537,7 +472,11 @@ section {
   color: #000;
 }
 
-/* Footer */
+.fa-utensils,
+.fa-handshake {
+  width: 28px;
+}
+
 footer {
   background-color: #353535;
   color: #FFF;
@@ -548,6 +487,7 @@ footer .footer__logo {
   font-family: Shrikhand, cursive;
   font-size: 20px;
   height: 17px;
+  margin: 30px 0 15px 0;
   width: 98px;
 }
 
@@ -558,17 +498,26 @@ footer a:hover {
   color: #9356DC;
 }
 
+footer li {
+  margin-top: 15px;
+}
+
 footer li:nth-child(2),
 footer li:nth-child(3) {
   font-weight: bold;
 }
 
+footer li:nth-child(5) {
+  margin-bottom: 30px;
+}
+
 ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
-  padding: 25px 0;
+  padding: 0 20px;
 }
 
 .btn-enchantee {
@@ -614,7 +563,7 @@ ul {
   cursor: pointer;
   position: relative;
   top: -10px;
-  left: -38px;
+  left: -27px;
 }
 .fa-heart:hover::before {
   background: linear-gradient(to top, #9356DC, #FF79DA);
