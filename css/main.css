@@ -108,14 +108,6 @@ a {
   text-decoration: none;
 }
 
-.btn-explorer a {
-  color: #FFF;
-}
-
-#restaurants a {
-  color: #000;
-}
-
 #location {
   background-color: #EAEAEA;
   display: flex;
@@ -147,7 +139,6 @@ input ::placeholder {
 .exploration h1 {
   font-size: 15px;
 }
-
 .exploration p {
   color: #353535;
 }
@@ -174,8 +165,7 @@ input ::placeholder {
   cursor: pointer;
   transform: scale(1.05);
 }
-
-.functioning a {
+.functioning__container__card__link {
   color: #000;
   font-weight: 600;
   line-height: 35px;
@@ -191,7 +181,7 @@ input ::placeholder {
 }
 
 .fa-mobile-button, .fa-list-ul, .fa-store {
-  color: lightgray;
+  color: gray;
   padding: 0 15px 0 10px;
 }
 .fa-mobile-button:hover, .fa-list-ul:hover, .fa-store:hover {
@@ -203,11 +193,13 @@ input ::placeholder {
   margin-bottom: 0;
   padding: 50px 0 15px 10px;
 }
-
-#restaurants {
+#restaurants__titre #restaurants {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
+}
+#restaurants__titre #restaurants #restaurants a {
+  color: #000;
 }
 
 .article {
@@ -234,7 +226,6 @@ input ::placeholder {
   position: relative;
   z-index: 2;
 }
-
 .article__image {
   border-radius: 15px 15px 0 0;
   box-shadow: 0px 2px 14px lightgray;
@@ -253,6 +244,7 @@ input ::placeholder {
   justify-content: space-between;
 }
 .article__container__card--text {
+  color: #000;
   margin-left: 0;
   padding: 0 0 25px 13px;
 }
@@ -339,7 +331,7 @@ section {
   display: flex;
   font-size: 10px;
   height: 100%;
-  position: absolute;
+  position: relative;
   left: 220px;
   transition: transform 500ms ease-in-out;
 }
@@ -542,6 +534,9 @@ ul {
   box-shadow: 10px 10px 20px #343638;
   cursor: pointer;
   transform: scale(1.15);
+}
+.btn-explorer a {
+  color: #FFF;
 }
 
 .btn-order {

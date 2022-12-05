@@ -9,14 +9,6 @@ a {
     text-decoration: none;
 }
 
-.btn-explorer a {
-    color: #FFF;
-}
-
-#restaurants a {
-    color: #000;
-}
-
 // Location
 
 #location {
@@ -24,7 +16,7 @@ a {
     display: flex;
     justify-content: center;
     .fa-location-dot {
-        color: #353535;
+        color: $dark-color;
         padding: 5px 5px 7px 15px;
     }
 }
@@ -35,7 +27,7 @@ input {
     font-weight: 600;
     width: 125px;
     ::placeholder {
-        color: #353535;
+        color: $dark-color;
     }
 }
 
@@ -43,7 +35,7 @@ input {
 
 .exploration {
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     padding: 15px 0;
@@ -51,10 +43,9 @@ input {
     h1 {
         font-size: 15px;
     }
-}
-
-.exploration p {
-    color: #353535;
+    p {
+        color: $dark-color;
+    }
 }
 
 // Functioning
@@ -66,26 +57,25 @@ input {
     display: flex;
     flex-direction: column;
         &__card {
-        background-color: #F6F6F6;
+        background-color: $background-color;
         border-radius: 20px;
         box-shadow: 0px 2px 14px lightgray;
         height: 65px;
         margin: 3%;
         transform: scale(1);
         transition: transform 400ms;
-            &:hover {
-                background: lighten($primary-color, 22%);
-                cursor: pointer;
-                transform: scale(1.05);
+        &:hover {
+            background: lighten($primary-color, 22%);
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+            &__link {
+                color: #000;
+                font-weight: 600;
+                line-height: 35px;
             }
         }
     }
-}
-
-.functioning a {
-    color: #000;
-    font-weight: 600;
-    line-height: 35px;
 }
 
 .step {
@@ -100,7 +90,7 @@ input {
 }
 
 .fa-mobile-button, .fa-list-ul, .fa-store {
-    color: lightgray;
+    color: gray;
     padding: 0 15px 0 10px;
     &:hover {
         color: $primary-color;
@@ -110,16 +100,19 @@ input {
 // Restaurants
 
 #restaurants__titre {
-    background-color: #F6F6F6;
+    background-color: $background-color;
     margin-bottom: 0;
     padding: 50px 0 15px 10px;
+    #restaurants {
+        background-color: $background-color;
+        display: flex;
+        flex-direction: column;
+        #restaurants a {
+            color: #000;
+        }
+    }
 }
 
-#restaurants {
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-}
 
 .article {
     background-color: #FFF;
@@ -144,16 +137,15 @@ input {
         position: relative;
         z-index: 2;
     }
-}
-
-.article__image {
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0px 2px 14px lightgray;
-    height: 215px;
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    z-index: 3;
+    &__image {
+        border-radius: 15px 15px 0 0;
+        box-shadow: 0px 2px 14px lightgray;
+        height: 215px;
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+    }
 }
 
 .article__container__card {
@@ -163,6 +155,7 @@ input {
     height: 100px;
     justify-content: space-between;
     &--text {
+        color: #000;
         margin-left: 0;
         padding: 0 0 25px 13px;
     }
