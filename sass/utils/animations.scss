@@ -7,21 +7,6 @@
     }
 }
 
-@keyframes move {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(+50px);
-    }
-    75% {
-      transform: translateY(-50px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-}
-
 .loading {
     align-items: center;
     animation: loading $animation-duree $loading-duree ease-in-out forwards;
@@ -50,35 +35,35 @@
         border: silver 5px solid;
         color: $tertiary-color;
     }
+    div {
+        border-radius: 50px;
+        font-size: 28px;
+        font-weight: bold;
+        height: 30px;
+        margin: 0 5px;
+        text-align: center;
+        width: 30px;
+    }
 }
 
-.loading div {
-    border-radius: 50px;
-    font-size: 28px;
-    font-weight: bold;
-    height: 30px;
-    margin: 0 5px;
-    text-align: center;
-    width: 30px;
+// Move
+
+@keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(+50px);
+    }
+    75% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
 }
-  
+
 // Menu - Cards
-
-.card__menu {
-    &:hover >.menu__choice--text {
-        width: 180px;
-    }
-    &:hover > .menu__choice--price {
-        transform: translateX(-75px);
-        transition-duration: $animation-duree;
-    }
-    &:hover  > .check {
-        transform: scaleX(1);
-        & > .check__animation {
-            transform: rotate(0deg);
-        }
-    }
-}
 
 @keyframes menu {
     0% {
@@ -88,6 +73,22 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+.card__menu {
+    &:hover >.menu__choice--text {
+        width: 180px;
+    }
+    &:hover > .menu__choice--price {
+        transform: translateX(-55px);
+        transition-duration: $animation-duree;
+    }
+    &:hover > .check {
+        transform: scaleX(1);
+        & > .check__animation {
+            transform: rotate(0deg);
+        }
     }
 }
 

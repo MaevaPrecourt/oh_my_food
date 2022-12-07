@@ -1,7 +1,41 @@
-.btn-enchantee {
+.fa-arrow-left {
     position: relative;
-    top: 350px;
-    right: 860px;
+    top: 30px;
+    right: 40px;
+}
+
+.new {
+    background-color: $tertiary-color;
+    color: #048968;
+    font-size: 18px;
+    font-weight: bold;
+    height: 23px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 73px;
+    z-index: 4;
+}
+
+.fa-heart {
+    color: lightgray;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: -27px;
+    &:hover::before {
+        background: linear-gradient(to top, $primary-color, $secondary-color);
+        background-clip: text;
+        font-weight: 900;
+        transition: 400ms ease-out;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &-menu {
+        position: relative;
+        top: -3px;
+        left: -17px;
+    }
 }
 
 .btn-explorer {
@@ -31,49 +65,13 @@
     position: relative;
     left: 40px;
     top: 22px;
-}
-
-.fa-arrow-left {
-    position: relative;
-    top: 30px;
-    right: 585px;
-}
-
-.fa-heart {
-    color: lightgray;
-    cursor: pointer;
-    position: relative;
-    top: -10px;
-    left: -27px;
-    &:hover::before {
-        background: linear-gradient(to top, $primary-color, $secondary-color);
-        background-clip: text;
-        font-weight: 900;
-        transition: 400ms ease-out;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    &-enchantee {
+        position: relative;
+        right: -38px;
+        top: 23px;
     }
-}
-
-.fa-heart-menu {
-    position: relative;
-    bottom: 13px;
-    left: -20px;
 }
 
 .fa-utensils {
     padding: 0;
-}
-
-.new {
-    background-color: $tertiary-color;
-    color: #048968;
-    font-size: 18px;
-    font-weight: bold;
-    height: 23px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 73px;
-    z-index: 4;
 }

@@ -9,20 +9,6 @@
     visibility: hidden;
   }
 }
-@keyframes move {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(50px);
-  }
-  75% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .loading {
   align-items: center;
   animation: loading 300ms 2000ms ease-in-out forwards;
@@ -52,7 +38,6 @@
   border: silver 5px solid;
   color: #99E2D0;
 }
-
 .loading div {
   border-radius: 50px;
   font-size: 28px;
@@ -63,20 +48,20 @@
   width: 30px;
 }
 
-.card__menu:hover > .menu__choice--text {
-  width: 180px;
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.card__menu:hover > .menu__choice--price {
-  transform: translateX(-75px);
-  transition-duration: 300ms;
-}
-.card__menu:hover > .check {
-  transform: scaleX(1);
-}
-.card__menu:hover > .check > .check__animation {
-  transform: rotate(0deg);
-}
-
 @keyframes menu {
   0% {
     transform: translateY(35px);
@@ -87,6 +72,20 @@
     opacity: 1;
   }
 }
+.card__menu:hover > .menu__choice--text {
+  width: 180px;
+}
+.card__menu:hover > .menu__choice--price {
+  transform: translateX(-55px);
+  transition-duration: 300ms;
+}
+.card__menu:hover > .check {
+  transform: scaleX(1);
+}
+.card__menu:hover > .check > .check__animation {
+  transform: rotate(0deg);
+}
+
 .first {
   animation: menu 1000ms 50ms backwards;
 }
@@ -210,19 +209,7 @@ input ::placeholder {
   height: 298px;
   margin: 15px;
 }
-.article__palette {
-  position: relative;
-  z-index: 2;
-}
-.article__enchantee {
-  position: relative;
-  z-index: 2;
-}
-.article__francaise {
-  position: relative;
-  z-index: 2;
-}
-.article__delice {
+.article__palette, .article__enchantee, .article__francaise, .article__delice {
   position: relative;
   z-index: 2;
 }
@@ -235,7 +222,6 @@ input ::placeholder {
   width: 100%;
   z-index: 3;
 }
-
 .article__container__card {
   align-items: center;
   border-radius: 20px;
@@ -277,8 +263,7 @@ html {
   position: relative;
   width: 100%;
 }
-
-#img__francaise {
+.restaurantcontainer__francaise {
   position: absolute;
   left: 0;
   top: 78px;
@@ -297,7 +282,8 @@ html {
 }
 .restaurantcontainer__title h1 {
   font-family: "Shrikhand", cursive;
-  padding-left: 20px;
+  font-size: 22px;
+  padding-left: 15px;
 }
 
 section {
@@ -308,13 +294,17 @@ section {
   padding-bottom: 50px;
   max-width: 100%;
 }
-
-.menu__choice {
+section .menu__choice {
   align-items: flex-end;
   height: auto;
   justify-items: center;
 }
-.menu__choice--text {
+section .menu__choice__enchantee {
+  padding-bottom: 15px;
+  position: relative;
+  bottom: -15px;
+}
+section .menu__choice--text {
   display: flex;
   flex-direction: column;
   left: 0;
@@ -322,23 +312,43 @@ section {
   transition: transform 500ms ease-in-out;
   white-space: nowrap;
 }
-.menu__choice--text h2 {
+section .menu__choice--text h2 {
   width: auto;
 }
-.menu__choice--price {
+section .menu__choice--price {
   align-items: flex-end;
   border-radius: 0 30px 30px 0;
   display: flex;
   font-size: 10px;
   height: 100%;
   position: relative;
-  left: 220px;
+  left: 55px;
   transition: transform 500ms ease-in-out;
+}
+section .card__ghost {
+  align-items: baseline;
+  border-bottom: 3px solid #99E2D0;
+  display: flex;
+  height: 35px;
+  margin-right: 250px;
+  position: relative;
+  right: -17px;
+  width: 40px;
+}
+section .card__ghost__enchantee {
+  align-items: baseline;
+  border-bottom: 3px solid #99E2D0;
+  display: flex;
+  height: 35px;
+  margin-right: 250px;
+  position: relative;
+  right: -17px;
+  width: 40px;
 }
 
 .textone {
   padding-right: 2px;
-  width: 630px;
+  width: 100%;
 }
 .textone__title {
   margin: 0;
@@ -346,7 +356,7 @@ section {
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: auto;
+  width: 150px;
 }
 .textone__description {
   margin: 0;
@@ -354,14 +364,30 @@ section {
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 150px;
 }
 .textone__description p {
   width: auto;
 }
 
-.menu__choice__enchantee {
+.card__menu {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  height: 66px;
+  justify-content: space-between;
+  margin: 13px;
+  padding: 0 15px;
   position: relative;
-  bottom: -40px;
+}
+.card__menu--decoration {
+  background-color: #FFF;
+  box-shadow: 4px 4px 5px #ABB0B4;
+  transition: box-shadow 250ms, scale 50ms 200ms;
+}
+.card__menu--decoration:hover {
+  box-shadow: 10px 10px 20px #343638;
+  cursor: pointer;
 }
 
 .check {
@@ -399,50 +425,6 @@ section {
   z-index: 4;
 }
 
-.card__ghost {
-  align-items: baseline;
-  border-bottom: 3px solid #99E2D0;
-  display: flex;
-  height: 35px;
-  margin-right: 250px;
-  position: relative;
-  right: -17px;
-  width: 40px;
-}
-
-.card__ghost__enchantee {
-  align-items: baseline;
-  border-bottom: 3px solid #99E2D0;
-  display: flex;
-  height: 35px;
-  margin-right: 250px;
-  position: relative;
-  bottom: 35px;
-  right: -17px;
-  width: 40px;
-}
-
-.card__menu {
-  align-items: center;
-  border-radius: 15px;
-  display: flex;
-  height: 66px;
-  justify-content: space-between;
-  margin: 13px;
-  padding: 0 15px;
-  position: relative;
-}
-
-.card__decoration--menu {
-  background-color: #FFF;
-  box-shadow: 4px 4px 5px #ABB0B4;
-  transition: box-shadow 250ms, scale 50ms 200ms;
-}
-.card__decoration--menu:hover {
-  box-shadow: 10px 10px 20px #343638;
-  cursor: pointer;
-}
-
 .header {
   background-color: #FFF;
   box-shadow: 0px 2px 5px lightgray;
@@ -457,7 +439,6 @@ section {
   font-weight: bolder;
   margin: 25px 0;
 }
-
 .header--menu a {
   color: #000;
 }
@@ -467,41 +448,13 @@ section {
   width: 28px;
 }
 
-footer {
+.footer {
   background-color: #353535;
   color: #FFF;
   font-weight: 100;
   width: 100%;
 }
-footer .footer__logo {
-  font-family: Shrikhand, cursive;
-  font-size: 20px;
-  height: 17px;
-  margin: 30px 0 15px 0;
-  width: 98px;
-}
-
-footer a {
-  color: #FFF;
-}
-footer a:hover {
-  color: #9356DC;
-}
-
-footer li {
-  margin-top: 15px;
-}
-
-footer li:nth-child(2),
-footer li:nth-child(3) {
-  font-weight: bold;
-}
-
-footer li:nth-child(5) {
-  margin-bottom: 30px;
-}
-
-ul {
+.footer ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -509,11 +462,68 @@ ul {
   margin: 0;
   padding: 0 20px;
 }
+.footer__logo {
+  font-family: Shrikhand, cursive;
+  font-size: 20px;
+  height: 17px;
+  margin: 30px 0 15px 0;
+  width: 98px;
+}
+.footer li {
+  margin-top: 15px;
+}
+.footer li:nth-child(2),
+.footer li:nth-child(3) {
+  font-weight: bold;
+}
+.footer li:nth-child(5) {
+  margin-bottom: 30px;
+}
+.footer a {
+  color: #FFF;
+}
+.footer a:hover {
+  color: #9356DC;
+}
 
-.btn-enchantee {
+.fa-arrow-left {
   position: relative;
-  top: 350px;
-  right: 860px;
+  top: 30px;
+  right: 40px;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #048968;
+  font-size: 18px;
+  font-weight: bold;
+  height: 23px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 73px;
+  z-index: 4;
+}
+
+.fa-heart {
+  color: lightgray;
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+  left: -27px;
+}
+.fa-heart:hover::before {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  font-weight: 900;
+  transition: 400ms ease-out;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-heart-menu {
+  position: relative;
+  top: -3px;
+  left: -17px;
 }
 
 .btn-explorer {
@@ -544,50 +554,14 @@ ul {
   left: 40px;
   top: 22px;
 }
-
-.fa-arrow-left {
+.btn-order-enchantee {
   position: relative;
-  top: 30px;
-  right: 585px;
-}
-
-.fa-heart {
-  color: lightgray;
-  cursor: pointer;
-  position: relative;
-  top: -10px;
-  left: -27px;
-}
-.fa-heart:hover::before {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
-  font-weight: 900;
-  transition: 400ms ease-out;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.fa-heart-menu {
-  position: relative;
-  bottom: 13px;
-  left: -20px;
+  right: -38px;
+  top: 23px;
 }
 
 .fa-utensils {
   padding: 0;
-}
-
-.new {
-  background-color: #99E2D0;
-  color: #048968;
-  font-size: 18px;
-  font-weight: bold;
-  height: 23px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 73px;
-  z-index: 4;
 }
 
 /*# sourceMappingURL=main.css.map */

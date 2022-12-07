@@ -29,13 +29,12 @@ html {
         position: relative;
         width: 100%;
     }
-}
-
-#img__francaise {
-    position: absolute;
-    left: 0;
-    top: 78px;
-    width: 100%;
+    &__francaise {
+        position: absolute;
+        left: 0;
+        top: 78px;
+        width: 100%;
+    }
 }
 
 .restaurantcontainer__title {
@@ -49,7 +48,8 @@ html {
     width: 100%;
         h1 {
         font-family: 'Shrikhand', cursive;
-        padding-left: 20px;
+        font-size: 22px;
+        padding-left: 15px;
     }
 }
 
@@ -62,45 +62,69 @@ section {
     height: auto;
     padding-bottom: 50px;
     max-width: 100%;
-}
-
-.menu__choice {
-    align-items: flex-end;
-    height: auto;
-    justify-items: center;
-    &--text {
-        display: flex;
-        flex-direction: column;
-        left: 0;
-        margin: 0;
-        transition: transform 500ms ease-in-out;
-        white-space: nowrap;
-        h2 {
-            width: auto;
+    .menu__choice {
+        align-items: flex-end;
+        height: auto;
+        justify-items: center;
+        &__enchantee {
+            padding-bottom: 15px;
+            position: relative;
+            bottom: -15px;
+        }
+        &--text {
+            display: flex;
+            flex-direction: column;
+            left: 0;
+            margin: 0;
+            transition: transform 500ms ease-in-out;
+            white-space: nowrap;
+            h2 {
+                width: auto;
+            }
+        }
+        &--price {
+            align-items: flex-end;
+            border-radius: 0 30px 30px 0;
+            display: flex;
+            font-size: 10px;
+            height: 100%;
+            position: relative;
+            left: 55px;
+            transition: transform 500ms ease-in-out;
         }
     }
-    &--price {
-        align-items: flex-end;
-        border-radius: 0 30px 30px 0;
+    .card__ghost {
+        align-items: baseline;
+        border-bottom: 3px solid $tertiary-color;
         display: flex;
-        font-size: 10px;
-        height: 100%;
+        height: 35px;
+        margin-right: 250px;
         position: relative;
-        left: 220px;
-        transition: transform 500ms ease-in-out;
+        right: -17px;
+        width: 40px;
+        &__enchantee {
+            align-items: baseline;
+            border-bottom: 3px solid $tertiary-color;
+            display: flex;
+            height: 35px;
+            margin-right: 250px;
+            position: relative;
+            right: -17px;
+            width: 40px;
+        }
     }
 }
 
 .textone {
     padding-right: 2px;
-    width: 630px;
+    width: 100%;
     &__title {
         margin: 0;
         overflow: hidden;
         position: relative;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: auto;
+        width: 150px;
     }
     &__description {
         margin: 0;
@@ -108,15 +132,31 @@ section {
         position: relative;
         text-overflow: ellipsis;
         white-space: nowrap;
+        width: 150px;
         p {
             width: auto;
         }
     }
 }
 
-.menu__choice__enchantee {
+.card__menu {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 66px;
+    justify-content: space-between;
+    margin: 13px;
+    padding: 0 15px;
     position: relative;
-    bottom: -40px;
+    &--decoration {
+        background-color: #FFF;
+        box-shadow: 4px 4px 5px #ABB0B4;
+        transition: box-shadow 250ms, scale 50ms 200ms;
+        &:hover {
+            box-shadow: 10px 10px 20px #343638;
+            cursor: pointer;
+        }
+    }
 }
 
 .check {
@@ -152,49 +192,5 @@ section {
             color: $tertiary-color;
             z-index: 4;
         }
-    }
-}
-
-.card__ghost {
-    align-items: baseline;
-    border-bottom: 3px solid $tertiary-color;
-    display: flex;
-    height: 35px;
-    margin-right: 250px;
-    position: relative;
-    right: -17px;
-    width: 40px;
-}
-
-.card__ghost__enchantee {
-    align-items: baseline;
-    border-bottom: 3px solid $tertiary-color;
-    display: flex;
-    height: 35px;
-    margin-right: 250px;
-    position: relative;
-    bottom: 35px;
-    right: -17px;
-    width: 40px;
-}
-
-.card__menu {
-    align-items: center;
-    border-radius: 15px;
-    display: flex;
-    height: 66px;
-    justify-content: space-between;
-    margin: 13px;
-    padding: 0 15px;
-    position: relative;
-}
-
-.card__decoration--menu {
-    background-color: #FFF;
-    box-shadow: 4px 4px 5px #ABB0B4;
-    transition: box-shadow 250ms, scale 50ms 200ms;
-    &:hover {
-        box-shadow: 10px 10px 20px #343638;
-        cursor: pointer;
     }
 }

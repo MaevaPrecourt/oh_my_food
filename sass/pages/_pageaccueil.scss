@@ -113,7 +113,6 @@ input {
     }
 }
 
-
 .article {
     background-color: #FFF;
     border-radius: 15px;
@@ -121,18 +120,9 @@ input {
     flex-direction: column;
     height: 298px;
     margin: 15px;
-    &__palette {
-        position: relative;
-        z-index: 2;
-    }
-    &__enchantee {
-        position: relative;
-        z-index: 2;
-    }
-    &__francaise {
-        position: relative;
-        z-index: 2;
-    }
+    &__palette,
+    &__enchantee,
+    &__francaise,
     &__delice {
         position: relative;
         z-index: 2;
@@ -146,17 +136,16 @@ input {
         width: 100%;
         z-index: 3;
     }
-}
-
-.article__container__card {
-    align-items: center;
-    border-radius: 20px;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    &--text {
-        color: #000;
-        margin-left: 0;
-        padding: 0 0 25px 13px;
+    &__container__card {
+        align-items: center;
+        border-radius: 20px;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        &--text {
+            color: #000;
+            margin-left: 0;
+            padding: 0 0 25px 13px;
+        }
     }
 }
