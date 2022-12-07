@@ -25,6 +25,18 @@
     width: 28px;
 }
 
+.fa-utensils {
+    @media screen and (min-width: 768px) {
+        width: 15px;
+    }
+}
+
+.fa-handshake {
+    @media screen and (min-width: 768px) {
+        width: 20px;
+    }
+}
+
 // Footer
 
 .footer {
@@ -39,9 +51,14 @@
         list-style-type: none;
         margin: 0;
         padding: 0 20px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            line-height: 50px;
+        }
     }
     &__logo {
-        font-family: Shrikhand, cursive;
+        font-family: "Shrikhand", cursive;
         font-size: 20px;
         height: 17px;
         margin: 30px 0 15px 0;
@@ -56,6 +73,9 @@
     }
     li:nth-child(5){
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 15px;
+        }
     }
     a {
         color: #FFF;

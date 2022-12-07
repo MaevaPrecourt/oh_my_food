@@ -150,6 +150,11 @@ input ::placeholder {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .functioning__container {
+    flex-direction: row;
+  }
+}
 .functioning__container__card {
   background-color: #F6F6F6;
   border-radius: 20px;
@@ -158,6 +163,12 @@ input ::placeholder {
   margin: 3%;
   transform: scale(1);
   transition: transform 400ms;
+}
+@media screen and (min-width: 768px) {
+  .functioning__container__card {
+    margin: 1%;
+    width: 32%;
+  }
 }
 .functioning__container__card:hover {
   background: #ceb3ef;
@@ -170,6 +181,11 @@ input ::placeholder {
   line-height: 35px;
 }
 
+@media screen and (min-width: 768px) {
+  .step {
+    padding-right: 10px;
+  }
+}
 .step #step__one, .step #step__two, .step #step__three {
   background-color: #9356DC;
   border-radius: 50%;
@@ -178,10 +194,21 @@ input ::placeholder {
   position: relative;
   right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .step {
+    padding: 0;
+  }
+}
 
 .fa-mobile-button, .fa-list-ul, .fa-store {
   color: gray;
   padding: 0 15px 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .fa-mobile-button, .fa-list-ul, .fa-store {
+    margin-right: 10px;
+    padding: 0;
+  }
 }
 .fa-mobile-button:hover, .fa-list-ul:hover, .fa-store:hover {
   color: #9356DC;
@@ -448,6 +475,18 @@ section .card__ghost__enchantee {
   width: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .fa-utensils {
+    width: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fa-handshake {
+    width: 20px;
+  }
+}
+
 .footer {
   background-color: #353535;
   color: #FFF;
@@ -462,8 +501,15 @@ section .card__ghost__enchantee {
   margin: 0;
   padding: 0 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 50px;
+  }
+}
 .footer__logo {
-  font-family: Shrikhand, cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 20px;
   height: 17px;
   margin: 30px 0 15px 0;
@@ -478,6 +524,11 @@ section .card__ghost__enchantee {
 }
 .footer li:nth-child(5) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer li:nth-child(5) {
+    margin-bottom: 15px;
+  }
 }
 .footer a {
   color: #FFF;
