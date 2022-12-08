@@ -2,6 +2,9 @@
     position: relative;
     top: 30px;
     right: 40px;
+    @media screen and (min-width: 768px){
+        right: 135px;
+    }
 }
 
 .new {
@@ -67,14 +70,17 @@
     }
 }
 
-.btn-order {
-    position: relative;
-    left: 40px;
-    top: 22px;
-    &-enchantee {
+#btn-center {
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    .btn-order {
         position: relative;
-        right: -38px;
-        top: 23px;
+        top: -28px;
+        &-enchantee {
+            position: relative;
+            top: -27px;
+        }
     }
 }
 

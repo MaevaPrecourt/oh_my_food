@@ -222,15 +222,15 @@ input ::placeholder {
   margin-bottom: 0;
   padding: 50px 0 15px 10px;
 }
-#restaurants__titre #restaurants a {
-  color: #000;
-}
 
 #restaurants {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   padding: 15px 0;
+}
+#restaurants a {
+  color: #000;
 }
 
 .article {
@@ -275,16 +275,6 @@ input ::placeholder {
     padding-left: 5px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .article__container__card h3 {
-    font-size: 13px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .article__container__card p {
-    font-size: 12px;
-  }
-}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -314,7 +304,8 @@ html {
   position: relative;
   width: 100%;
 }
-.restaurantcontainer__francaise {
+
+#img__francaise {
   position: absolute;
   left: 0;
   top: 78px;
@@ -409,6 +400,11 @@ html {
   white-space: nowrap;
   width: 150px;
 }
+@media screen and (min-width: 768px) {
+  .textone__title {
+    width: auto;
+  }
+}
 .textone__description {
   margin: 0;
   overflow: hidden;
@@ -416,6 +412,11 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 150px;
+}
+@media screen and (min-width: 768px) {
+  .textone__description {
+    width: auto;
+  }
 }
 .textone__description p {
   width: auto;
@@ -566,6 +567,11 @@ html {
   top: 30px;
   right: 40px;
 }
+@media screen and (min-width: 768px) {
+  .fa-arrow-left {
+    right: 135px;
+  }
+}
 
 .new {
   background-color: #99E2D0;
@@ -634,15 +640,18 @@ html {
   color: #FFF;
 }
 
-.btn-order {
-  position: relative;
-  left: 40px;
-  top: 22px;
+#btn-center {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
 }
-.btn-order-enchantee {
+#btn-center .btn-order {
   position: relative;
-  right: -38px;
-  top: 23px;
+  top: -28px;
+}
+#btn-center .btn-order-enchantee {
+  position: relative;
+  top: -27px;
 }
 
 .fa-utensils {

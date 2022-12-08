@@ -29,12 +29,13 @@ html {
         position: relative;
         width: 100%;
     }
-    &__francaise {
-        position: absolute;
-        left: 0;
-        top: 78px;
-        width: 100%;
-    }
+}
+
+#img__francaise {
+    position: absolute;
+    left: 0;
+    top: 78px;
+    width: 100%;
 }
 
 .restaurantcontainer__title {
@@ -125,6 +126,9 @@ html {
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 150px;
+        @media screen and (min-width: 768px){
+            width: auto;
+        }
     }
     &__description {
         margin: 0;
@@ -133,6 +137,9 @@ html {
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 150px;
+        @media screen and (min-width: 768px){
+            width: auto;
+        }
         p {
             width: auto;
         }
