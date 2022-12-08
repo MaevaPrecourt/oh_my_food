@@ -171,9 +171,12 @@ input ::placeholder {
   }
 }
 .functioning__container__card:hover {
-  background: #ceb3ef;
+  background: #f2eafb;
   cursor: pointer;
   transform: scale(1.05);
+}
+.functioning__container__card:hover :nth-child(2) {
+  color: #9356DC;
 }
 .functioning__container__card__link {
   color: #000;
@@ -328,7 +331,7 @@ html {
   padding-left: 15px;
 }
 
-section {
+#restaurants__menu {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
@@ -336,22 +339,17 @@ section {
   padding-bottom: 50px;
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  section {
-    flex-direction: unset;
-  }
-}
-section .menu__choice {
+#restaurants__menu .menu__choice {
   align-items: flex-end;
   height: auto;
   justify-items: center;
 }
-section .menu__choice__enchantee {
+#restaurants__menu .menu__choice__enchantee {
   padding-bottom: 15px;
   position: relative;
   bottom: -15px;
 }
-section .menu__choice--text {
+#restaurants__menu .menu__choice--text {
   display: flex;
   flex-direction: column;
   left: 0;
@@ -359,10 +357,10 @@ section .menu__choice--text {
   transition: transform 500ms ease-in-out;
   white-space: nowrap;
 }
-section .menu__choice--text h2 {
+#restaurants__menu .menu__choice--text h2 {
   width: auto;
 }
-section .menu__choice--price {
+#restaurants__menu .menu__choice--price {
   align-items: flex-end;
   border-radius: 0 30px 30px 0;
   display: flex;
@@ -372,7 +370,7 @@ section .menu__choice--price {
   left: 55px;
   transition: transform 500ms ease-in-out;
 }
-section .card__ghost {
+#restaurants__menu .card__ghost {
   align-items: baseline;
   border-bottom: 3px solid #99E2D0;
   display: flex;
@@ -382,7 +380,7 @@ section .card__ghost {
   right: -17px;
   width: 40px;
 }
-section .card__ghost__enchantee {
+#restaurants__menu .card__ghost__enchantee {
   align-items: baseline;
   border-bottom: 3px solid #99E2D0;
   display: flex;
