@@ -39,7 +39,7 @@ html {
 
 .restaurantcontainer__title {
     align-items: baseline;
-    background-color: #F6F6F6;
+    background-color: $background-color;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     display: flex;
@@ -47,7 +47,7 @@ html {
     position: absolute;
     width: 100%;
         h1 {
-        font-family: 'Shrikhand', cursive;
+        @include shrikhand;
         font-size: 22px;
         padding-left: 15px;
     }
@@ -56,7 +56,7 @@ html {
 // Section
 
 #restaurants__menu {
-    background-color: #F6F6F6;
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     height: auto;

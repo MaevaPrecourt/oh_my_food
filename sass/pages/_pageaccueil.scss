@@ -123,23 +123,28 @@ input {
     background-color: $background-color;
     margin-bottom: 0;
     padding: 50px 0 15px 10px;
-    #restaurants {
-        background-color: $background-color;
-        display: flex;
-        flex-direction: column;
-    }
     #restaurants a {
         color: #000;
     }
 }
+#restaurants {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
 
 .article {
+    @include shadow-button;
     background-color: #FFF;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 298px;
     margin: 15px;
+    &:hover {
+        @include shadow-button-hover;
+    }
     &__palette,
     &__enchantee,
     &__francaise,
