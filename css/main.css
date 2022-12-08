@@ -76,8 +76,8 @@
   width: 180px;
 }
 .card__menu:hover > .menu__choice--price {
-  transform: translateX(-50px);
-  transition-duration: 300ms;
+  transform: translateX(-55px);
+  transition-duration: 1ms;
 }
 .card__menu:hover > .check {
   transform: scaleX(1);
@@ -360,7 +360,8 @@ html {
   display: flex;
   font-size: 10px;
   height: 100%;
-  position: relative;
+  position: absolute;
+  right: 9px;
   transition: transform 500ms ease-in-out;
 }
 #restaurants__menu .card__ghost {
@@ -452,8 +453,8 @@ html {
   position: relative;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 500ms;
-  width: 70px;
+  transition: transform 675ms;
+  width: 60px;
   z-index: 2;
 }
 .check__animation {

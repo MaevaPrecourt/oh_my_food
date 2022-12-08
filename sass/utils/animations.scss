@@ -81,8 +81,8 @@
         width: 180px;
     }
     &:hover > .menu__choice--price {
-        transform: translateX(-50px);
-        transition-duration: $animation-duree;
+        transform: translateX(-55px);
+        transition-duration: 1ms;
     }
     &:hover > .check {
         transform: scaleX(1);

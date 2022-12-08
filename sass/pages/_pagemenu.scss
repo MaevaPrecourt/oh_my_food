@@ -86,7 +86,8 @@ html {
             display: flex;
             font-size: 10px;
             height: 100%;
-            position: relative;
+            position: absolute;
+            right: 9px;
             transition: transform 500ms ease-in-out;
         }
     }
@@ -176,8 +177,8 @@ html {
     position: relative;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 500ms;
-    width: 70px;
+    transition: transform 675ms;
+    width: 60px;
     z-index: 2;
     &__animation {
         @extend %flex-center;
