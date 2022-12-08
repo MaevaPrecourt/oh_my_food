@@ -79,9 +79,6 @@ html {
             margin: 0;
             transition: transform 500ms ease-in-out;
             white-space: nowrap;
-            h2 {
-                width: auto;
-            }
         }
         &--price {
             align-items: flex-end;
@@ -90,7 +87,6 @@ html {
             font-size: 10px;
             height: 100%;
             position: relative;
-            left: 55px;
             transition: transform 500ms ease-in-out;
         }
     }
@@ -157,11 +153,12 @@ html {
     position: relative;
     &--decoration {
         background-color: #FFF;
-        box-shadow: 4px 4px 5px #ABB0B4;
+        @include shadow-button;
         transition: box-shadow 250ms, scale 50ms 200ms;
         &:hover {
-            box-shadow: 10px 10px 20px #343638;
+            @include shadow-button-hover;
             cursor: pointer;
+            padding-left: 15px;
         }
     }
 }
@@ -175,11 +172,11 @@ html {
     float: right;
     height: 100%;
     justify-content: center;
+    margin-right: -16px;
     position: relative;
-    left: 16px;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 400ms;
+    transition: transform 500ms;
     width: 70px;
     z-index: 2;
     &__animation {
@@ -190,7 +187,7 @@ html {
         justify-content: center;
         margin-top: 3px;
         overflow: hidden;
-        position: absolute;
+        position: relative;
         transform: rotate(-360deg);
         transition: transform 500ms ease-in-out;
         width: 20px;
