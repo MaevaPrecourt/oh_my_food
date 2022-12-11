@@ -92,10 +92,10 @@ html {
             align-items: flex-end;
             border-radius: 0 30px 30px 0;
             display: flex;
-            font-size: 10px;
+            font-size: 7px;
             height: 100%;
             position: absolute;
-            right: 9px;
+            right: 6px;
             transition: transform 500ms ease-in-out;
         }
     }
@@ -122,9 +122,11 @@ html {
 }
 
 .textone {
+    line-height: 22px;
     padding-right: 2px;
     width: 100%;
     &__title {
+        font-size: 10px;
         margin: 0;
         overflow: hidden;
         position: relative;
@@ -136,6 +138,7 @@ html {
         }
     }
     &__description {
+        font-size: 10px;
         margin: 0;
         overflow: hidden;
         position: relative;
@@ -156,9 +159,9 @@ html {
     border-radius: 15px;
     display: flex;
     height: 66px;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 13px;
-    padding: 0 15px;
+    padding: 0 6px;
     position: relative;
     &--decoration {
         background-color: #FFF;
@@ -167,7 +170,7 @@ html {
         &:hover {
             @include shadow-button-hover;
             cursor: pointer;
-            padding-left: 15px;
+            padding-left: 6px;
         }
     }
 }
@@ -185,7 +188,7 @@ html {
     position: relative;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 675ms;
+    transition: transform 800ms;
     width: 60px;
     z-index: 2;
     &__animation {

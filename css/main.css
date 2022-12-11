@@ -383,10 +383,10 @@ html {
   align-items: flex-end;
   border-radius: 0 30px 30px 0;
   display: flex;
-  font-size: 10px;
+  font-size: 7px;
   height: 100%;
   position: absolute;
-  right: 9px;
+  right: 6px;
   transition: transform 500ms ease-in-out;
 }
 #restaurants__menu .card__ghost {
@@ -411,10 +411,12 @@ html {
 }
 
 .textone {
+  line-height: 22px;
   padding-right: 2px;
   width: 100%;
 }
 .textone__title {
+  font-size: 10px;
   margin: 0;
   overflow: hidden;
   position: relative;
@@ -428,6 +430,7 @@ html {
   }
 }
 .textone__description {
+  font-size: 10px;
   margin: 0;
   overflow: hidden;
   position: relative;
@@ -449,9 +452,9 @@ html {
   border-radius: 15px;
   display: flex;
   height: 66px;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 13px;
-  padding: 0 15px;
+  padding: 0 6px;
   position: relative;
 }
 .card__menu--decoration {
@@ -462,7 +465,7 @@ html {
 .card__menu--decoration:hover {
   box-shadow: 10px 10px 20px #343638;
   cursor: pointer;
-  padding-left: 15px;
+  padding-left: 6px;
 }
 
 .check {
@@ -478,7 +481,7 @@ html {
   position: relative;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 675ms;
+  transition: transform 800ms;
   width: 60px;
   z-index: 2;
 }
