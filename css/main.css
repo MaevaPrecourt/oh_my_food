@@ -12,7 +12,7 @@
 .loading {
   align-items: center;
   animation: loading 300ms 2000ms ease-in-out forwards;
-  background-color: rgba(246, 246, 246, 0.5);
+  background-color: #FFF;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -73,11 +73,10 @@
   }
 }
 .card__menu:hover > .menu__choice--text {
-  width: 180px;
+  width: 135px;
 }
 .card__menu:hover > .menu__choice--price {
-  transform: translateX(-55px);
-  transition-duration: 1ms;
+  transform: translateX(-60px);
 }
 .card__menu:hover > .check {
   transform: scaleX(1);
@@ -259,7 +258,6 @@ input ::placeholder {
 }
 .article__palette, .article__enchantee, .article__francaise, .article__delice {
   position: relative;
-  z-index: 2;
 }
 .article__image {
   border-radius: 15px 15px 0 0;
@@ -269,7 +267,6 @@ input ::placeholder {
   object-fit: cover;
   position: relative;
   width: 100%;
-  z-index: 3;
 }
 .article__container__card {
   align-items: center;
@@ -351,7 +348,7 @@ html {
   padding-bottom: 50px;
   max-width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   #restaurants__menu {
     flex-direction: unset;
   }
@@ -361,7 +358,7 @@ html {
   height: auto;
   justify-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   #restaurants__menu .menu__choice {
     width: 33%;
   }
@@ -413,38 +410,23 @@ html {
 .textone {
   line-height: 22px;
   padding-right: 2px;
-  width: 100%;
+  width: auto;
 }
 .textone__title {
-  font-size: 10px;
+  font-size: 11.5px;
   margin: 0;
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 150px;
-}
-@media screen and (min-width: 768px) {
-  .textone__title {
-    width: auto;
-  }
 }
 .textone__description {
-  font-size: 10px;
+  font-size: 11.5px;
   margin: 0;
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 150px;
-}
-@media screen and (min-width: 768px) {
-  .textone__description {
-    width: auto;
-  }
-}
-.textone__description p {
-  width: auto;
 }
 
 .card__menu {
@@ -452,7 +434,7 @@ html {
   border-radius: 15px;
   display: flex;
   height: 66px;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 13px;
   padding: 0 6px;
   position: relative;
@@ -479,10 +461,11 @@ html {
   justify-content: center;
   margin-right: -16px;
   position: relative;
+  left: -9px;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 800ms;
-  width: 60px;
+  width: 56px;
   z-index: 2;
 }
 .check__animation {
@@ -604,7 +587,6 @@ html {
   right: 20px;
   top: 20px;
   width: 73px;
-  z-index: 4;
 }
 @media screen and (min-width: 768px) {
   .new {

@@ -159,7 +159,6 @@ input {
     &__francaise,
     &__delice {
         position: relative;
-        z-index: 2;
     }
     &__image {
         border-radius: 15px 15px 0 0;
@@ -169,7 +168,6 @@ input {
         object-fit: cover;
         position: relative;
         width: 100%;
-        z-index: 3;
     }
     &__container__card {
         align-items: center;
