@@ -138,8 +138,9 @@ input ::placeholder {
 .exploration h1 {
   font-size: 15px;
 }
-.exploration p {
+.exploration h4 {
   color: #353535;
+  font-weight: lighter;
 }
 
 .functioning {
