@@ -561,14 +561,9 @@ html {
 }
 
 .fa-arrow-left {
-  position: relative;
+  position: absolute;
   top: 30px;
-  right: 40px;
-}
-@media screen and (min-width: 768px) {
-  .fa-arrow-left {
-    right: 135px;
-  }
+  left: 15px;
 }
 
 .new {
