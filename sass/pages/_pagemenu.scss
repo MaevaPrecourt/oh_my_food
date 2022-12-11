@@ -65,10 +65,16 @@ html {
     height: auto;
     padding-bottom: 50px;
     max-width: 100%;
+    @media screen and (min-width: 992px){
+        flex-direction: unset;
+    }
     .menu__choice {
         align-items: flex-end;
         height: auto;
         justify-items: center;
+        @media screen and (min-width: 992px){
+            width: 33%;
+        }
         &__enchantee {
             padding-bottom: 15px;
             position: relative;
