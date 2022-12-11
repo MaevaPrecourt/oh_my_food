@@ -25,6 +25,7 @@ html {
         background-size: cover;
         height: 300px;
         margin-bottom: 5px;
+        max-width: 2000px;
         object-fit: cover;
         position: relative;
         width: 100%;
@@ -32,6 +33,7 @@ html {
 }
 
 #img__francaise {
+    max-width: 2000px;
     position: absolute;
     left: 0;
     top: 78px;
