@@ -10,6 +10,7 @@ a {
 }
 
 html {
+    max-width: 1440px;
     overflow-x: hidden;
 }
 
@@ -33,7 +34,7 @@ html {
 }
 
 #img__francaise {
-    max-width: 2000px;
+    max-width: 1440px;
     position: absolute;
     left: 0;
     top: 78px;
@@ -47,6 +48,7 @@ html {
     border-top-right-radius: 35px;
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
     position: absolute;
     width: 100%;
         h1 {
