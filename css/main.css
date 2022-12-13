@@ -300,6 +300,7 @@ a {
 }
 
 html {
+  margin: auto;
   max-width: 1440px;
   overflow-x: hidden;
 }
@@ -309,6 +310,10 @@ html {
   display: flex;
   height: 300px;
   justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+}
+.restaurantcontainer div:first-child {
   width: 100%;
 }
 .restaurantcontainer img {
@@ -322,10 +327,8 @@ html {
 }
 
 #img__francaise {
-  max-width: 1440px;
-  position: absolute;
-  left: 0;
-  top: 78px;
+  margin: auto;
+  position: relative;
   width: 100%;
 }
 
@@ -336,6 +339,7 @@ html {
   border-top-right-radius: 35px;
   display: flex;
   justify-content: space-between;
+  margin: auto;
   max-width: 1440px;
   position: absolute;
   width: 100%;
